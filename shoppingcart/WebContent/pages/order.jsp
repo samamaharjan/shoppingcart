@@ -23,11 +23,6 @@ function submitForm(formId) {
 		return false;
 	}
 	
-	if(formId.shipAddress2.value.length < 1) {
-		alert("Enter Shipping Apt#");
-		return false;
-	}	
-	
 	if(formId.shipCity.value.length < 1) {
 		alert("Enter Shipping City");
 		return false;
@@ -70,12 +65,7 @@ function submitForm(formId) {
 		alert("Enter Billinging Street Address");
 		return false;
 	}
-	
-	if(formId.billAddress2.value.length < 1) {
-		alert("Enter Billing Apt#");
-		return false;
-	}	
-	
+		
 	if(formId.billCity.value.length < 1) {
 		alert("Enter Billing City");
 		return false;
@@ -130,7 +120,7 @@ function submitForm(formId) {
 											</tr>
 											
 											<tr>
-												<td align="right">Apt#:&nbsp;<span class="required">*</span></td>
+												<td align="right">Apt#:&nbsp;</td>
 												<td align="left"><input type="text" name="shipAddress2" value="<c:out value="${user.address2}" escapeXml="false"/>"></td>
 											</tr>
 											
@@ -220,7 +210,7 @@ function submitForm(formId) {
 											</tr>
 											
 											<tr>
-												<td align="right">Apt#:&nbsp;<span class="required">*</span></td>
+												<td align="right">Apt#:&nbsp;</td>
 												<td align="left"><input type="text" name="billAddress2" value=""></td>
 											</tr>
 											

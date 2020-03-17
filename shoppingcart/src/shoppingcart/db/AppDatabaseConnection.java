@@ -25,8 +25,8 @@ public class AppDatabaseConnection {// to connect with DB need url, user name, p
 		Connection connection = null;
 		String url = "jdbc:mysql://localhost/scdb";		
 		String driver_classname  = "com.mysql.jdbc.Driver";
-		String username = "root";
-		String password = "root";	
+		String username = "ap_sc";
+		String password = "Get@it01!";	
 		
 		
 		try{
